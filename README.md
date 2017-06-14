@@ -1,10 +1,7 @@
 # Getting-and-cleaning-data
 Course Project submission for Coursera's Getting and Cleaning Data course in the Data Science Specialization.
 
-# GCDProj
-Coursera Getting and Cleaning Data Project
-
-### Overview
+### Project Overview
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
 This project consists of three files:
@@ -12,7 +9,7 @@ This project consists of three files:
 * CodeBook.md: describes the various variables used in the program
 * run_analysis.R: consists of the code
 
-### Requirements of the project
+### Project Requirements
 
 Creating an R script called run_analysis.R that does the following:
 
@@ -22,7 +19,7 @@ Creating an R script called run_analysis.R that does the following:
 1. Appropriately labels the data set with descriptive variable names.
 1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-### About the Data
+### Data Description
 
 The data has been taken from the Human Activity Recognition Using Smartphones Dataset. The experiment was as follows:
 
