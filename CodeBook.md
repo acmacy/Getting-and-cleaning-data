@@ -52,7 +52,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 Dimensions: 
 * Before filtering: 10299 rows, 563 columns
 * After filtering: 10299 rows, 89 columns
-* Tiny dataset (with average): 180 rows, 88 columns
+* Tidy dataset (with average): 180 rows, 88 columns
 
 ## Procedure followed
 * Check for presence of Directory (create new if not present)
