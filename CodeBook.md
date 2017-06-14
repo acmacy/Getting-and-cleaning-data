@@ -34,33 +34,44 @@ These signals were used to estimate variables of the feature vector for each pat
 * fBodyGyroMag
 * fBodyGyroJerkMag
 
-The set of variables that were estimated from these signals are: 
+The set of variables that were estimated from these signals are: (after filtering)
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+* mean(): Mean value
+* std(): Standard deviation
+* angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
+
+## Input Dataset after merging
+Dimensions: 
+* Before filtering: 10299 rows, 563 columns
+* After filtering: 10299 rows, 89 columns
+* Tiny dataset (with average): 180 rows, 88 columns
+
+## Procedure followed
+* Check for presence of Directory (create new if not present)
+* Download Zip File of raw Dataset
+* Unzip downloaded dataset
+* Read Training Data using read.delim()
+* Read Test Data using read.delim()
+* Combine data in train folder using cbind()
+* Combine data in test folder using cbind()
+* Combine Training & Test Data using rbind()
+* Add Variable names to combined dataset after reading "features.txt"
+* Filter dataset variables to include only Mean & Standard Deviation variables
+* Read Activity Labels
+* Merge Activity labels with filtered dataset
+* Change variable names to make them descriptive using colnames()
+* View Final Clean dataset
+* Create independent tidy Dataset with Averages using aggregate() in dplyr package
+* Export tidy data set to get text file
+
 
 ## Summary Statistics for all variables in Clean Dataset
 
