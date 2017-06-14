@@ -1,3 +1,7 @@
+##Codebook for run_analysis.R - 
+Function to input scattered raw data files and clean them to form a structured tiny dataset with requisite variables to enable user to perform analysis.
+
+
 ====================================================================================
 
    Activity
